@@ -9,6 +9,7 @@ trait FnBox {
     fn call_box(self: Box<Self>);
 }
 
+
 impl<F> FnBox for F
 where
     F: FnOnce(),
